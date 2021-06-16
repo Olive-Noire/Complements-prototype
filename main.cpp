@@ -34,7 +34,7 @@ constexpr bool operator==(unsigned long long n, const std::bitset<Size> &b) noex
 int main() {
 
     // Tests unitaires
-    std::cout << CA1<unsigned char>(0b0010) << ' ' << CA<unsigned char>(0b0010, 2) << ' ' << std::bitset<32>(SignedCA2(2)) <<
+    std::cout << CA1<unsigned char>(0b0010) << ' ' << CA<unsigned char>(0b0010, 2) << ' ' << /*std::bitset<32>(SignedCA2(2)) <<*/
     std::boolalpha << bool(1ULL == CA(CA(1ULL, 1/*n*/).to_ullong(), 1/*n*/)) << std::endl; // Vérifie l'expression : x = CAn(CAn(x))
 
     std::cin.get();
